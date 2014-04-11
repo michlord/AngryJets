@@ -1,0 +1,34 @@
+{
+    "directory": "C:/Dev/AngryJets/",
+    "fullscreen": true,
+    "fps": 30,
+	"map": ["mount_doom","garden"],
+	"selected_map" : "mount_doom",
+	"ship": ["arwing","thrust","shuttle","aurora"],
+    "players": [
+        {
+            "name": "player1",
+            "flag": "poland",
+			"ship": "arwing",
+            "keybinding": {
+                "left": 71,
+                "right": 72,
+                "up": 73,
+                "primary": 74,
+                "secondary": 58
+            }
+        },
+        {
+            "name": "player2",
+            "flag": "usa",
+			"ship": "arwing",
+            "keybinding": {
+                "left": 0,
+                "right": 3,
+                "up": 22,
+                "primary": 18,
+                "secondary": 60
+            }
+        }
+    ]
+}

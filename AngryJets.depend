@@ -1,0 +1,318 @@
+# depslib dependency file v1.0
+1379491724 source:c:\dev\angryjets\engine\collision.cpp
+	"Collision.h"
+	<SFML\Graphics.hpp>
+	<map>
+	<stdexcept>
+
+1379490808 c:\dev\angryjets\engine\collision.h
+	"NonCopyable.h"
+	<SFML\Graphics.hpp>
+	<map>
+
+1379343375 c:\dev\angryjets\engine\noncopyable.h
+
+1379577477 source:c:\dev\angryjets\engine\resourcemanager.cpp
+	"ResourceManager.h"
+	<stdexcept>
+	<SFML/Graphics.hpp>
+	<SFML/Audio.hpp>
+
+1379543435 c:\dev\angryjets\engine\resourcemanager.h
+	"NonCopyable.h"
+	<SFML/Graphics.hpp>
+	<SFML/Audio.hpp>
+	<map>
+	<list>
+	<tuple>
+
+1379407951 source:c:\dev\angryjets\engine\state.cpp
+	"State.h"
+
+1379417761 c:\dev\angryjets\engine\state.h
+	<SFML/Graphics.hpp>
+
+1379430508 source:c:\dev\angryjets\engine\statemachine.cpp
+	"StateMachine.h"
+
+1379543559 c:\dev\angryjets\engine\statemachine.h
+	"State.h"
+	<map>
+
+1379411051 source:c:\dev\angryjets\main.cpp
+	<iostream>
+	"Game/GameLoop.h"
+
+1379430905 source:c:\dev\angryjets\engine\settings\settingsabstract.cpp
+	"SettingsAbstract.h"
+	<string>
+	<json/json.h>
+	<fstream>
+
+1379410335 c:\dev\angryjets\engine\settings\settingsabstract.h
+	<string>
+	<json/json.h>
+
+1379429105 source:c:\dev\angryjets\engine\settings\settingsgame.cpp
+	"SettingsGame.h"
+	<string>
+	<json/json.h>
+	<stdexcept>
+
+1379428464 c:\dev\angryjets\engine\settings\settingsgame.h
+	"SettingsAbstract.h"
+	"SettingsPlayer.h"
+	<string>
+	<json/json.h>
+	<vector>
+
+1379410349 c:\dev\angryjets\engine\settings\settingsplayer.h
+	"SettingsAbstract.h"
+	"SettingsKeybinding.h"
+	<string>
+	<json/json.h>
+
+1379410318 c:\dev\angryjets\engine\settings\settingskeybinding.h
+	<string>
+	<SFML/Window/Keyboard.hpp>
+	<json/json.h>
+	"SettingsAbstract.h"
+
+1379410325 source:c:\dev\angryjets\engine\settings\settingskeybinding.cpp
+	"SettingsKeybinding.h"
+	<string>
+	<SFML/Window/Keyboard.hpp>
+
+1379410321 source:c:\dev\angryjets\engine\settings\settingsplayer.cpp
+	"SettingsPlayer.h"
+	<string>
+	<json/json.h>
+
+1379430306 c:\dev\angryjets\game\gameloop.h
+	"../Engine/Settings.h"
+	"../Engine/StateMachine.h"
+	"../Engine/ResourceManager.h"
+	<sigslot.h>
+
+1379410268 c:\dev\angryjets\engine\settings.h
+	"Settings/SettingsGame.h"
+
+1379577772 source:c:\dev\angryjets\game\gameloop.cpp
+	"GameLoop.h"
+	<stdexcept>
+	<string>
+	<iostream>
+	<SFML/Graphics.hpp>
+	"StateMenu.h"
+	"StateGameplay.h"
+
+1379429900 c:\dev\angryjets\game\statemenu.h
+	"../Engine/State.h"
+	"../Engine/Settings.h"
+	"../Engine/Gui.h"
+	<SFML/Audio.hpp>
+	<sigslot.h>
+
+1379415099 c:\dev\angryjets\engine\gui.h
+	"Gui/GuiWidget.h"
+	"Gui/GuiWindow.h"
+	"Gui/GuiLayout.h"
+	"Gui/GuiVerticalLayout.h"
+	"Gui/GuiHorizontalLayout.h"
+	"Gui/GuiLabel.h"
+	"Gui/GuiHighlightedLabel.h"
+
+1379021734 c:\dev\angryjets\engine\gui\guiwidget.h
+	<SFML/Window/Event.hpp>
+	<SFML/Graphics.hpp>
+	<SFML/System/Time.hpp>
+
+1379020904 c:\dev\angryjets\engine\gui\guiwindow.h
+	"GuiWidget.h"
+
+1379087882 c:\dev\angryjets\engine\gui\guilayout.h
+	"GuiWidget.h"
+	<list>
+
+1379087947 c:\dev\angryjets\engine\gui\guiverticallayout.h
+	"GuiLayout.h"
+
+1379088076 c:\dev\angryjets\engine\gui\guihorizontallayout.h
+	"GuiLayout.h"
+
+1379090233 c:\dev\angryjets\engine\gui\guilabel.h
+	"GuiWidget.h"
+	<sigslot.h>
+
+1379090345 c:\dev\angryjets\engine\gui\guihighlightedlabel.h
+	"GuiLabel.h"
+
+1379090185 source:c:\dev\angryjets\engine\gui\guihighlightedlabel.cpp
+	"GuiHighlightedLabel.h"
+
+1379106364 source:c:\dev\angryjets\engine\gui\guihorizontallayout.cpp
+	"GuiHorizontalLayout.h"
+	<iostream>
+
+1379090243 source:c:\dev\angryjets\engine\gui\guilabel.cpp
+	"GuiLabel.h"
+
+1379088003 source:c:\dev\angryjets\engine\gui\guilayout.cpp
+	"GuiLayout.h"
+
+1379416854 source:c:\dev\angryjets\engine\gui\guiverticallayout.cpp
+	"GuiVerticalLayout.h"
+	<iostream>
+
+1379021733 source:c:\dev\angryjets\engine\gui\guiwidget.cpp
+	"GuiWidget.h"
+
+1379021942 source:c:\dev\angryjets\engine\gui\guiwindow.cpp
+	"GuiWindow.h"
+
+1379500389 source:c:\dev\angryjets\game\statemenu.cpp
+	"StateMenu.h"
+	<SFML/Graphics.hpp>
+	"../Engine/ResourceManager.h"
+	<stdexcept>
+
+1379449361 source:c:\dev\angryjets\engine\settings\settingsmap.cpp
+	"SettingsMap.h"
+
+1379431792 c:\dev\angryjets\engine\settings\settingsmap.h
+	"SettingsAbstract.h"
+	<SFML/System.hpp>
+
+1379537043 c:\dev\angryjets\game\stategameplay.h
+	"../Engine/State.h"
+	<sigslot.h>
+	"../Engine/Gui.h"
+	"../Engine/Settings.h"
+	"../Engine/Settings/SettingsMap.h"
+	"Ground.h"
+	"Player.h"
+	"Ship.h"
+	"Jetman.h"
+	"Bullet.h"
+	<list>
+	"Hud.h"
+	"Flag.h"
+
+1379577780 source:c:\dev\angryjets\game\stategameplay.cpp
+	"StateGameplay.h"
+	"../Engine/ResourceManager.h"
+	"../Engine/SoundRecycler.h"
+	"../Engine/Collision.h"
+	"GunMinigun.h"
+	<SFML/Audio.hpp>
+	"../Engine/Gui.h"
+	<iostream>
+
+1379457839 c:\dev\angryjets\game\ground.h
+	<SFML/Graphics.hpp>
+	"Collidable.h"
+	<vector>
+
+1379503087 c:\dev\angryjets\game\collidable.h
+	<SFML/Graphics.hpp>
+
+1379539285 source:c:\dev\angryjets\game\ground.cpp
+	"Ground.h"
+	<iostream>
+
+1379519315 c:\dev\angryjets\game\player.h
+	"Vehicle.h"
+	"Gun.h"
+
+1379524936 c:\dev\angryjets\game\vehicle.h
+	<SFML/Graphics.hpp>
+	"Collidable.h"
+	<sigslot.h>
+
+1379524748 c:\dev\angryjets\game\ship.h
+	"Vehicle.h"
+
+1379518086 source:c:\dev\angryjets\game\vehicle.cpp
+	"Vehicle.h"
+
+1379524885 source:c:\dev\angryjets\game\ship.cpp
+	"Ship.h"
+	<cmath>
+
+1379500144 source:c:\dev\angryjets\game\bullet.cpp
+	"Bullet.h"
+
+1379500109 c:\dev\angryjets\game\bullet.h
+	<SFML/Graphics.hpp>
+	"Collidable.h"
+
+1379509489 source:c:\dev\angryjets\game\bulletminigun.cpp
+	"BulletMinigun.h"
+	"../Engine/ResourceManager.h"
+	<SFML/Audio.hpp>
+	"../Engine/SoundRecycler.h"
+
+1379509197 c:\dev\angryjets\game\bulletminigun.h
+	"Bullet.h"
+	<SFML/Audio.hpp>
+
+1379524774 source:c:\dev\angryjets\game\gun.cpp
+	"Gun.h"
+
+1379524847 c:\dev\angryjets\game\gun.h
+	"Vehicle.h"
+	<list>
+	"Bullet.h"
+
+1379524828 source:c:\dev\angryjets\game\gunminigun.cpp
+	"GunMinigun.h"
+	"BulletMinigun.h"
+	"../Engine/ResourceManager.h"
+
+1379501696 c:\dev\angryjets\game\gunminigun.h
+	"Gun.h"
+
+1379519361 source:c:\dev\angryjets\game\player.cpp
+	"Player.h"
+
+1379509157 c:\dev\angryjets\engine\soundrecycler.h
+	<SFML/Audio.hpp>
+	<list>
+	"NonCopyable.h"
+
+1379577542 source:c:\dev\angryjets\engine\soundrecycler.cpp
+	"SoundRecycler.h"
+
+1379511890 c:\dev\angryjets\game\hud.h
+	<SFML/Graphics.hpp>
+	"Player.h"
+	"../Engine/StringUtil.h"
+	"../Engine/Gui.h"
+
+1379510076 c:\dev\angryjets\engine\stringutil.h
+	<string>
+	<sstream>
+	<typeinfo>
+
+1379512040 source:c:\dev\angryjets\game\hud.cpp
+	"Hud.h"
+	"../Engine/ResourceManager.h"
+	"../Engine/StringUtil.h"
+
+1379524908 c:\dev\angryjets\game\jetman.h
+	"Vehicle.h"
+
+1379532876 source:c:\dev\angryjets\game\jetman.cpp
+	"Jetman.h"
+
+1379538046 source:c:\dev\angryjets\game\flag.cpp
+	"Flag.h"
+
+1379538010 c:\dev\angryjets\game\flag.h
+	<SFML/Graphics.hpp>
+	"Player.h"
+	"Vehicle.h"
+	"../Engine/ResourceManager.h"
+	"../Engine/SoundRecycler.h"
+	"Collidable.h"
+

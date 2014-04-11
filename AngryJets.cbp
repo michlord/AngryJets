@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="AngryJets" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/AngryJets" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/AngryJets" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+		</Compiler>
+		<Unit filename="Engine/Collision.cpp" />
+		<Unit filename="Engine/Collision.h" />
+		<Unit filename="Engine/Gui.h" />
+		<Unit filename="Engine/Gui/GuiHighlightedLabel.cpp" />
+		<Unit filename="Engine/Gui/GuiHighlightedLabel.h" />
+		<Unit filename="Engine/Gui/GuiHorizontalLayout.cpp" />
+		<Unit filename="Engine/Gui/GuiHorizontalLayout.h" />
+		<Unit filename="Engine/Gui/GuiLabel.cpp" />
+		<Unit filename="Engine/Gui/GuiLabel.h" />
+		<Unit filename="Engine/Gui/GuiLayout.cpp" />
+		<Unit filename="Engine/Gui/GuiLayout.h" />
+		<Unit filename="Engine/Gui/GuiVerticalLayout.cpp" />
+		<Unit filename="Engine/Gui/GuiVerticalLayout.h" />
+		<Unit filename="Engine/Gui/GuiWidget.cpp" />
+		<Unit filename="Engine/Gui/GuiWidget.h" />
+		<Unit filename="Engine/Gui/GuiWindow.cpp" />
+		<Unit filename="Engine/Gui/GuiWindow.h" />
+		<Unit filename="Engine/NonCopyable.h" />
+		<Unit filename="Engine/ResourceManager.cpp" />
+		<Unit filename="Engine/ResourceManager.h" />
+		<Unit filename="Engine/Settings.h" />
+		<Unit filename="Engine/Settings/SettingsAbstract.cpp" />
+		<Unit filename="Engine/Settings/SettingsAbstract.h" />
+		<Unit filename="Engine/Settings/SettingsGame.cpp" />
+		<Unit filename="Engine/Settings/SettingsGame.h" />
+		<Unit filename="Engine/Settings/SettingsKeybinding.cpp" />
+		<Unit filename="Engine/Settings/SettingsKeybinding.h" />
+		<Unit filename="Engine/Settings/SettingsMap.cpp" />
+		<Unit filename="Engine/Settings/SettingsMap.h" />
+		<Unit filename="Engine/Settings/SettingsPlayer.cpp" />
+		<Unit filename="Engine/Settings/SettingsPlayer.h" />
+		<Unit filename="Engine/SoundRecycler.cpp" />
+		<Unit filename="Engine/SoundRecycler.h" />
+		<Unit filename="Engine/State.cpp" />
+		<Unit filename="Engine/State.h" />
+		<Unit filename="Engine/StateMachine.cpp" />
+		<Unit filename="Engine/StateMachine.h" />
+		<Unit filename="Engine/StringUtil.h" />
+		<Unit filename="Game/Bullet.cpp" />
+		<Unit filename="Game/Bullet.h" />
+		<Unit filename="Game/BulletMinigun.cpp" />
+		<Unit filename="Game/BulletMinigun.h" />
+		<Unit filename="Game/Collidable.h" />
+		<Unit filename="Game/Flag.cpp" />
+		<Unit filename="Game/Flag.h" />
+		<Unit filename="Game/GameLoop.cpp" />
+		<Unit filename="Game/GameLoop.h" />
+		<Unit filename="Game/Ground.cpp" />
+		<Unit filename="Game/Ground.h" />
+		<Unit filename="Game/Gun.cpp" />
+		<Unit filename="Game/Gun.h" />
+		<Unit filename="Game/GunMinigun.cpp" />
+		<Unit filename="Game/GunMinigun.h" />
+		<Unit filename="Game/Hud.cpp" />
+		<Unit filename="Game/Hud.h" />
+		<Unit filename="Game/Jetman.cpp" />
+		<Unit filename="Game/Jetman.h" />
+		<Unit filename="Game/Player.cpp" />
+		<Unit filename="Game/Player.h" />
+		<Unit filename="Game/Ship.cpp" />
+		<Unit filename="Game/Ship.h" />
+		<Unit filename="Game/StateGameplay.cpp" />
+		<Unit filename="Game/StateGameplay.h" />
+		<Unit filename="Game/StateMenu.cpp" />
+		<Unit filename="Game/StateMenu.h" />
+		<Unit filename="Game/Vehicle.cpp" />
+		<Unit filename="Game/Vehicle.h" />
+		<Unit filename="main.cpp" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

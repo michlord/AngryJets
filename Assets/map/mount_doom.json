@@ -1,0 +1,30 @@
+{
+    "scale": 2,
+    "graphics": {
+        "background": "mount_doom_bg",
+        "foreground": "mount_doom_fg",
+        "mask": "mount_doom_mask"
+    },
+    "player_spawn": [
+        {
+            "flag": {
+                "x": 34,
+                "y": 468
+            },
+            "ship": {
+                "x": 54,
+                "y": 518
+            }
+        },
+        {
+            "flag": {
+                "x": 1517,
+                "y": 452
+            },
+            "ship": {
+                "x": 1536,
+                "y": 497
+            }
+        }
+    ]
+}

@@ -1,0 +1,23 @@
+# depslib dependency file v1.0
+1378984238 source:c:\dev\angryjets\tests\resourcemanagertest\main.cpp
+	<iostream>
+	<SFML/Graphics.hpp>
+	"../../Engine/ResourceManager.h"
+	<tuple>
+
+1379343246 source:c:\dev\angryjets\engine\resourcemanager.cpp
+	"ResourceManager.h"
+	<stdexcept>
+	<SFML/Graphics.hpp>
+	<SFML/Audio.hpp>
+
+1379343227 c:\dev\angryjets\engine\resourcemanager.h
+	"NonCopyable.h"
+	<SFML/Graphics.hpp>
+	<SFML/Audio.hpp>
+	<map>
+	<list>
+	<tuple>
+
+1379343375 c:\dev\angryjets\engine\noncopyable.h
+

@@ -1,0 +1,30 @@
+{
+    "scale": 1.75,
+    "graphics": {
+        "background": "garden_bg",
+        "foreground": "garden_fg",
+        "mask": "garden_mask"
+    },
+    "player_spawn": [
+        {
+            "flag": {
+                "x": 308,
+                "y": 905
+            },
+            "ship": {
+                "x": 328,
+                "y": 950
+            }
+        },
+        {
+            "flag": {
+                "x": 853,
+                "y": 919
+            },
+            "ship": {
+                "x": 874,
+                "y": 950
+            }
+        }
+    ]
+}

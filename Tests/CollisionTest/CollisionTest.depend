@@ -1,0 +1,33 @@
+# depslib dependency file v1.0
+1379365225 source:c:\dev\angryjets\engine\collision.cpp
+	"Collision.h"
+	<SFML\Graphics.hpp>
+	<map>
+	<stdexcept>
+
+1379365357 c:\dev\angryjets\engine\collision.h
+	"NonCopyable.h"
+	<SFML\Graphics.hpp>
+	<map>
+
+1379343375 c:\dev\angryjets\engine\noncopyable.h
+
+1379343246 source:c:\dev\angryjets\engine\resourcemanager.cpp
+	"ResourceManager.h"
+	<stdexcept>
+	<SFML/Graphics.hpp>
+	<SFML/Audio.hpp>
+
+1379343227 c:\dev\angryjets\engine\resourcemanager.h
+	"NonCopyable.h"
+	<SFML/Graphics.hpp>
+	<SFML/Audio.hpp>
+	<map>
+	<list>
+	<tuple>
+
+1379365284 source:c:\dev\angryjets\tests\collisiontest\main.cpp
+	<iostream>
+	"../../Engine/ResourceManager.h"
+	"../../Engine/Collision.h"
+
