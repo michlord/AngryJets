@@ -39,3 +39,7 @@ Screenshots
 ![Image](screenshots/menu.png?raw=true)
 ![Image](screenshots/gameplay.png?raw=true)
 
+Todo
+---
+At the time I was writing this game I didn't remember to use virtual destructors...
+This should probably be fixed.
