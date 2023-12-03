@@ -6,6 +6,7 @@
 #include <SFML/Audio.hpp>
 #include "../Engine/Gui.h"
 #include <iostream>
+#include <cmath>
 
 namespace game {
 StateGameplay::StateGameplay(sf::RenderWindow& window,engine::SettingsGame * settings_):

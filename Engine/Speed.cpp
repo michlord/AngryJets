@@ -15,10 +15,10 @@ float Speed::asPixelsPerSecond(){
 float Speed::asPixelsPerFrame(){
 	return pixels_per_second*time_step;
 }
-static void Speed::setTimeStep(float time_step_){
+void Speed::setTimeStep(float time_step_){
 	time_step = time_step_;
 }
-static float Speed::getTimeStep(){
+float Speed::getTimeStep(){
 	return time_step;
 }
 

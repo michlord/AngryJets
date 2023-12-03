@@ -1,4 +1,6 @@
 #include "Vehicle.h"
+#include <cmath>
+
 namespace game{
 Vehicle::Vehicle(const sf::Texture& texture){
 	sprite.setTexture(texture);

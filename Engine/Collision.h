@@ -3,7 +3,7 @@
 #define idE2FC9137_3697_419C_B21082E09B82FE64
 
 #include "NonCopyable.h"
-#include <SFML\Graphics.hpp>
+#include <SFML/Graphics.hpp>
 #include <map>
 
 #define bm BitmaskManager::getInstance()

@@ -1,4 +1,5 @@
 #include "Jetman.h"
+#include <cmath>
 
 namespace game{
 
@@ -29,6 +30,7 @@ float Jetman::getRotation(float rotation_){
 		return -90.0f;
 	if(direction == RIGHT)
 		return 90.0f;
+    return 0.0f;
 }
 
 void Jetman::onLeft(){

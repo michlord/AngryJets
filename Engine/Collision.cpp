@@ -1,5 +1,5 @@
 #include "Collision.h"
-#include <SFML\Graphics.hpp>
+#include <SFML/Graphics.hpp>
 #include <map>
 #include <stdexcept>
 

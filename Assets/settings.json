@@ -1,5 +1,5 @@
 {
-    "directory": "C:/Dev/AngryJets/",
+    "directory": "/home/mzimniak/Documents/source/AngryJets/",
     "fullscreen": true,
     "fps": 30,
 	"map": ["mount_doom","garden"],
