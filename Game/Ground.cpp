@@ -5,16 +5,19 @@ bool checkIfPointInRectBounds(sf::Vector2f point, sf::IntRect bounds){
 	return point.x > 0 && point.y > 0 && point.x < bounds.width && point.y < bounds.height;
 }
 
-Ground::Ground(const sf::Texture& background_,const sf::Texture& foreground_, const sf::Image& mask_){
+Ground::Ground(const sf::Texture& background_,const sf::Image& foreground_, const sf::Image& mask_){
 	mask = mask_;
 	foreground = foreground_;
 	background = background_;
+    sf::Texture foreground_texture;
+    foreground_texture.loadFromImage(foreground);
 	//texture.loadFromImage(mask);
-	sprite.setTexture(foreground);
+	sprite.setTexture(foreground_texture);
 }
 void Ground::makeCircleHole(sf::Vector2f position, float radius){
 
 }
+
 void Ground::makeSquareHole(sf::Vector2f position, int size){
 	if( sprite.getGlobalBounds().contains(position) ){
 		sf::IntRect texture_bounds = sprite.getTextureRect();
@@ -27,9 +30,7 @@ void Ground::makeSquareHole(sf::Vector2f position, int size){
                 if( checkIfPointInRectBounds(final_position,texture_bounds) == true ){
                     if(mask.getPixel(final_position.x,final_position.y) != sf::Color::Red){
                         mask.setPixel(final_position.x,final_position.y,sf::Color::Black);
-                        sf::Image pixel;
-                        pixel.create(1,1,sf::Color::Transparent);
-                        foreground.update(pixel,final_position.x,final_position.y);
+                        foreground.setPixel(final_position.x,final_position.y,sf::Color::Transparent);
                     }
                 }
 		    }
@@ -46,7 +47,7 @@ void Ground::makeSquareHole(sf::Vector2f position, int size){
         */
 	}
 }
-
+/*
 std::vector<sf::Vector2f> Ground::makeSquareHoleGetPixels(sf::Vector2f position, int size){
     std::vector<sf::Vector2f> output;
     output.reserve(size*size);
@@ -71,6 +72,7 @@ std::vector<sf::Vector2f> Ground::makeSquareHoleGetPixels(sf::Vector2f position,
 	}
 	return output;
 }
+*/
 void Ground::makeSpriteHole(sf::Sprite sprite){
 
 }
@@ -78,7 +80,9 @@ void Ground::draw(sf::RenderTarget& target, sf::RenderStates states) const{
     sf::Sprite tmp = sprite;
     tmp.setTexture(background);
     target.draw(tmp);
-    tmp.setTexture(foreground);
+    sf::Texture foreground_texture;
+    foreground_texture.loadFromImage(foreground);
+    tmp.setTexture(foreground_texture);
     target.draw(tmp);
 }
 

@@ -8,10 +8,10 @@
 namespace game{
 class Ground : public sf::Drawable, public Collidable {
 public:
-	Ground(const sf::Texture& background_,const sf::Texture& foreground_, const sf::Image& mask_);
+	Ground(const sf::Texture& background_,const sf::Image& foreground_, const sf::Image& mask_);
 	void 						makeCircleHole(sf::Vector2f position, float radius=1.0f);
 	void 						makeSquareHole(sf::Vector2f position, int size=1);
-    std::vector<sf::Vector2f> 	makeSquareHoleGetPixels(sf::Vector2f position, int size=1);
+    //std::vector<sf::Vector2f> 	makeSquareHoleGetPixels(sf::Vector2f position, int size=1);
 	void 						makeSpriteHole(sf::Sprite sprite);
 	sf::Sprite 					getCollisionSprite();
 	sf::Color		 			getAlphaColor();
@@ -22,7 +22,7 @@ public:
 private:
 	sf::Sprite  sprite;
 	sf::Texture background;
-	sf::Texture foreground;
+	sf::Image foreground;
 	sf::Image	mask;
 
 private:

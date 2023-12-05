@@ -212,7 +212,7 @@ void StateGameplay::update(){
             if(engine::collision::spriteSpriteTest(b->getCollisionSprite(),b->getCollisionMask(),
                                                    ground->getCollisionSprite(),ground->getCollisionMask(),
                                                    b->getAlphaColor(),ground->getAlphaColor())){
-                ground->makeSquareHole(b->getPosition(),4);
+                ground->makeSquareHole(b->getPosition(),16);
                 b->onHit();
                 delete b;
                 it = bullets.erase(it);
@@ -299,7 +299,7 @@ void StateGameplay::onEnter(){
     engine::rm->loadTexture("gameplay/texture/ground/mask",settings->directory+"Assets/map/"+map_settings->mask+".png");
 
     ground = new Ground(engine::rm->getTexture("gameplay/texture/ground/background"),
-                        engine::rm->getTexture("gameplay/texture/ground/foreground"),
+                        engine::rm->getTexture("gameplay/texture/ground/foreground").copyToImage(),
                         engine::rm->getTexture("gameplay/texture/ground/mask").copyToImage());
 
     ground->setScale(map_settings->scale);
